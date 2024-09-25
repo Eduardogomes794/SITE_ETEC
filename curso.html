@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+  <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="imagens/E.png">
+    <title> ETEC Vestibulinho </title>
+  <style type="text/css">
+  body{
+        background-color: #f0f0f0;
+        font-family: arial;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    input[type=text], select, textarea {
+        width: 60%;
+        padding: 1%; 
+        border: 1px solid #696969; 
+        border-radius: 6px; 
+    } 
+
+    .h3 {
+        font-size: 1.17em;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: -1px;
+    }
+
+    .a{
+      color: white;
+      text-decoration: underline;
+      transition: 0.4s;
+    }
+
+#topo{
+        position: absolute;
+        background-color: #b20000;
+        width: 100%; 
+        height: 345px; 
+        margin-top: -10px;
+        margin-left: -16px;
+    }
+
+    #menu {
+        position: absolute;
+        top: 0;
+        padding: 0px;
+        width: 100%; 
+        height: 60px; 
+        margin-top: 170px;
+        margin-left: -16px;
+        text-align: center; 
+        background-color: #921209; 
+        letter-spacing: 4px; 
+        word-spacing: 5px;
+    }
+
+    #conteudo{
+      height: 930px; 
+        width: 80%;
+        background-color: white;
+        padding: 10px;
+        margin-left: 165px;
+    }
+
+    #rodape{
+        position: absolute;
+        background-color: #b20000;
+        width: 100%; 
+        height: 300px; 
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+
+    #inicio {
+        font-family: arial;
+        color: white;
+        font-size: 20px;
+        margin-top: -15%;
+        margin-left: 32%;
+    }
+
+    #cadastre {
+        background-color: #b20000;
+        text-align: center;
+        color: white;
+        width: 90%;
+        height: 105px;
+        margin-left: 5%;
+    }
+
+    a#a {
+        text-decoration: none;
+        font-family: arial;
+        color: white;
+        font-size: 20px;
+        margin-top: -15%;
+        margin-left: 32%;
+    }
+    
+    #a1{
+      color: white;
+      text-decoration: none;
+      transition: 0.4s;
+    }
+
+    #barrinha {
+        margin-top: -10%;
+        margin-left: 42%;
+    }
+
+    #barrinha02{
+        margin-top: -8%;
+        margin-left: 72%;
+    }
+
+    #endereco {
+        font-family: arial;
+        color: white;
+        font-size: 18px;
+        margin-top: -8%;
+        margin-left: 45%;
+    }
+
+    #insta {
+      margin-top: -9%;
+      margin-left: 71%;
+    }
+
+    #fb {
+      margin-top: -63px;
+      margin-left: 78%;
+    }
+
+    #wpp {
+        margin-top: -50px;
+        margin-left: 82%;
+    }
+
+    #tt {
+        margin-top: -65px;
+        margin-left: 86%;
+    }
+
+    #botao {
+        margin-left: 50px;
+        width: 13%;
+        height: 30px;
+        background: #696969;
+        color: #fff;
+        border: 2px solid white;
+        border-radius: 5px;
+        text-shadow:none;
+    }
+
+    #botao:hover {
+        background:#b20000;
+        color: #fff;
+        border: 1px solid #eee;
+    } 
+
+    #login{
+        letter-spacing: 2px; 
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #921209;
+        color: white;
+        padding: 17px 15px;
+        margin: 8px 0;
+        border:none;
+        cursor: pointer;
+        width: 100%;
+        /*ALTERAÇÕES*/
+        float: right; 
+        margin-top: -1.01%;
+    }
+
+    #login:hover {
+        box-shadow: 0px 0px 10px 5px white;
+        transition: 0.4s;
+        border: 1px solid;
+    } 
+
+    .paginas{
+        color: white;
+        text-decoration: none;
+        height: 100%;
+        padding: 20px 14px;
+    }
+
+    .paginas:hover{
+        box-shadow: 0px 0px 10px 3px white;
+        transition: 0.4s;
+    }
+
+    .dropbtn {
+        background-color: #921209;
+        color: white;
+        font-size: 20px;
+        border: none;
+        letter-spacing: 2px; 
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        word-spacing: 1px;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #921209;}
+
+    input.nome, input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#login1 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:none;
+  cursor: pointer;
+  width: 100%;
+  /*ALTERAÇÕES*/
+  float: right;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#login{
+  letter-spacing: 2px; 
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #921209;
+  color: white;
+  padding: 17px 15px;
+  margin: 8px 0;
+  border:none;
+  cursor: pointer;
+  width: 80%;
+  /*ALTERAÇÕES*/
+  float: right; 
+  margin-top: -1%;
+}
+
+#login:hover {
+  box-shadow: 0px 0px 10px 5px white;
+  transition: 0.4s;
+  border: 1px solid;
+} 
+/* Extra styles for the cancel button */
+.cancelbtn {
+  color:white;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  font-size: small;
+  float:  left;
+  margin-top: -2.8%;
+  border-radius: 10px;
+  border:none;
+}
+    
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 35%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 30px;
+  text-align: left;
+  font-size: large;
+  border-radius: 25px;
+}
+
+span.psw {
+  float: right;
+  font-size: small;
+  padding-top: 14px;
+  margin-top: -3.8%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 70%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
+  margin-left: 13%;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 25px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.navbar {
+  position: fixed; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
+  z-index: 1;
+}
+    </style>
+</head>
+
+ <body>
+<div class="navbar">
+  <div id="topo">
+
+
+      </div>
+
+  <div id="menu">
+<p><div class="h3"> 
+      <a href="index.html" id="a1" class="paginas">Inicio</a>
+      <a href="curso.html" id="a1" class="paginas">Curso</a>
+          <div class="dropdown">
+<button class="dropbtn"><a href="disciplinas.html" id="a1" class="paginas"><b>Disciplinas</b></a></button>
+<div class="dropdown-content">
+  <a target="">Interfaces</a>
+  <a target="">Gweb</a>
+  <a target="">Banco de Dados</a>
+  <a target="">Artes Digital</a>
+  <a target="">Fundamentos da Informática</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn"><a href="professores.html" id="a1" class="paginas"><b>Professores</b></a></button>
+<div class="dropdown-content">
+  <a name="menu">
+  <a href="#portugues" >Português</a>
+  <a href="#matematica">Matemática</a>
+  <a href="#bd">Banco de Dados</a>
+  <a href="#programacao">Programação </a> 
+  <a href="#Hardware">Hardware</a></a>
+</div></div>
+      <a href="sobre.html" id="a1" class="paginas" style="letter-spacing: 2px;">Sobre a ETEC</a>     
+  <span><button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Login </button></span>
+</div>
+  </div>
+  	</div>
+  <div id="conteudo">
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<h2><b style="margin-left: 50px;">Informática para Internet</b></h2>
+<br/>
+<h4 style="margin-left: 30px;">O técnico em informática é o profissional que desenvolve, faz a manutenção de websites, portais na internet e internet. Fazendo uso de ferramentas de desenvolvimento de projetos para idealizar soluções que ajudam no processo de criação de interfaces e aplicativos para comércio e marketing eletrônicos, e ao final do curso o aluno terá um diploma não só do curso de informática como também do ensino médio, com validade nacional, podendo trabalhar na área assim que terminar o ensino médio.</h4>
+<br/>
+<h4><b style="margin-left: 50px;">Mercado de Trabalho:</b><br/></h4>
+<h4 style="margin-left: 30px;">Instituições publicas e privadas que requerem programação de computadores para Internet</h4>
+<br/>
+<h4 style="margin-left: 50px;"><b>Alguns pré-requisitos para ingressar no curso:</b><br/></h4>
+  <h4 style="margin-left: 30px;">Candidato que finalizou ou está cursando o ensino médio:<br/>
+  - Obter o certificado de conclusão do ensino médio ou uma declaração que está cursando 2ª ou 3ª série do Ensino Médio.</h4>
+<br/>
+  <h4><b style="margin-left: 50px">Candidato que realizou o ENEM:</b><br/></h4>
+  <h4 style="margin-left: 30px;">- Possuir certificado ou declaração de conclusão do Ensino Médio expedido por algum órgão competente.</h4>
+
+  </div>
+<br/><br/><br/><br/><br/>
+  <div id="cadastre"> 
+    <h2> Cadastre-se para mais informações do vestibulinho da ETEC </h2>
+    <form>
+        <input type="text" id="email" name="email" placeholder="Seu@email.com">
+        <input  id="botao" type="submit" name="btn_cadastrar" value="cadastrar" height="100%">
+    </form>
+  </div>
+
+    <div id="rodape">
+
+  <img src="imagens/logo.png" height="290"> 
+  <div id="inicio"> Inicio </div>
+  <br/>
+  <a id="a" class="a" href="curso.html"> Cursos </a>
+  <br/>
+  <a id="a" class="a" href="disciplinas.html"> Disciplinas</a>
+  <br/>
+  <a id="a" class="a" href="Professores.html"> Professores</a>
+
+  <div id="barrinha"> <img src="imagens/barrinha.png" height="150"> </div>
+
+  <div id="endereco"> Rod. Pref. Luiz Salomão Chamma, 1635 <br/> Pouso Alegre, Franco da Rocha - SP <br/> CP: 07859-040 </div>
+
+  <div id="barrinha02" > <img src="imagens/barrinha.png" height="150" style="margin-right: 50%"> </div>  
+
+  <div id="insta">
+  <a href="https://www.instagram.com/etecfranco/">
+  <img src="imagens/iconeinsta.png" height="80">
+  </a> 
+  </div>
+
+  <div id="fb">
+  <a href="https://www.facebook.com/etecfran">
+  <img src="imagens/iconefb.png" height="45">
+  </a> 
+</div>
+
+  <div id="wpp">
+  <a href="https://web.whatsapp.com/">
+  <img src="imagens/iconewpp.png" height="55">
+  </a> 
+  </div>
+
+  <div id="tt">
+  <a href="https://twitter.com/">
+  <img src="imagens/iconett.png" height="75">
+  </a> 
+  </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

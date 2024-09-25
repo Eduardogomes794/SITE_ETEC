@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+	<meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="imagens/E.png">
+    <title> ETEC Vestibulinho </title>
+	<style type="text/css">
+	body{
+        background-color: #f0f0f0;
+        font-family: arial;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    input[type=text], select, textarea {
+        width: 60%;
+        padding: 1%; 
+        border: 1px solid #696969; 
+        border-radius: 6px; 
+    } 
+
+    img{
+	    margin-left: 4%;
+	}
+
+    .img1{
+        margin-left: 0%;
+    }
+
+    a#a {
+        text-decoration: none;
+        font-family: arial;
+        color: white;
+        font-size: 20px;
+        margin-top: -15%;
+        margin-left: 32%;
+    }
+
+    .h3 {
+        font-size: 1.17em;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: -1px;
+    }
+
+    .a{
+	    color: white;
+	    text-decoration: underline;
+	    transition: 0.4s;
+    }
+
+    #a1{
+	    color: white;
+	    text-decoration: none;
+	    transition: 0.4s;
+    }
+
+#topo{
+        position: absolute;
+        background-color: #b20000;
+        width: 100%; 
+        height: 345px; 
+        margin-top: -10px;
+        margin-left: -16px;
+    }
+
+    #menu {
+        position: absolute;
+        top: 0;
+        padding: 0px;
+        width: 100%; 
+        height: 60px; 
+        margin-top: 170px;
+        margin-left: -16px;
+        text-align: center; 
+        background-color: #921209; 
+        letter-spacing: 4px; 
+        word-spacing: 5px;
+    }
+    
+    #conteudo{
+        height: 13600px; 
+        margin-left: 165px;
+        width: 80%;     
+        background-color: white;
+        padding: 10px;
+
+    }
+
+    #rodape{
+        position: absolute;
+        background-color: #b20000;
+        width: 100%; 
+        height: 300px; 
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+
+    #inicio {
+        font-family: arial;
+        color: white;
+        font-size: 20px;
+        margin-top: -15%;
+        margin-left: 32%;
+    }
+
+    #cadastre {
+        background-color: #b20000;
+        text-align: center;
+        color: white;
+        width: 90%;
+        height: 105px;
+        margin-left: 5%;
+    }
+    
+    #barrinha {
+        margin-top: -10%;
+        margin-left: 42%;
+    }
+
+    #barrinha02{
+        margin-top: -6.5%;
+        margin-left: 72%;
+    }
+
+    #endereco {
+        font-family: arial;
+        color: white;
+        font-size: 18px;
+        margin-top: -8%;
+        margin-left: 45%;
+    }
+
+
+    #insta {
+      margin-top: -9%;
+      margin-left: 71%;
+    }
+
+    #fb {
+      margin-top: -4%;
+      margin-left: 78%;
+    }
+
+    #wpp {
+        margin-top: -3.2%;
+        margin-left: 82%;
+    }
+
+    #tt {
+        margin-top: -4%;
+        margin-left: 86%;
+    }
+
+    #botao {
+        margin-left: 50px;
+        width: 13%;
+        height: 30px;
+        background: #696969;
+        color: #fff;
+        border: 2px solid white;
+        border-radius: 5px;
+        text-shadow:none;
+    }
+
+    #botao:hover {
+        background:#b20000;
+        color: #fff;
+        border: 1px solid #eee;
+    } 
+
+    #login{
+        letter-spacing: 2px; 
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #921209;
+        color: white;
+        padding: 17px 15px;
+        margin: 8px 0;
+        border:none;
+        cursor: pointer;
+        width: 100%;
+        /*ALTERAÇÕES*/
+        float: right; 
+        margin-top: -1.01%;
+    }
+
+    #login:hover {
+        box-shadow: 0px 0px 10px 5px white;
+        transition: 0.4s;
+        border: 1px solid;
+    } 
+
+    #nome{ 
+        font-size: 22px;
+        text-align: center;
+       	margin-left: 4%;
+       	letter-spacing: 2px;
+        width: 320px;
+        height: 40px;
+     }
+
+     #titulo{
+     		margin-left: 42%;
+     		margin-top: -420px;
+     		font-family: Lustria-Regular;
+     	}
+
+     	#subtitulo{
+     		margin-left: -16%;
+     		margin-top:  36px;
+     	}
+
+     	  #texto01{
+     		margin-left: -16%;
+     		margin-top:  40px;
+     		width: 820px;
+     		text-align: justify;
+     		font-size: 22px;
+     		font-family: Calibri;
+     	}
+
+     	.texto02{
+     		margin-left: -60%;
+     		width: 1150px;
+     		text-align: justify;
+     		font-size: 22px;
+     		font-family: Calibri;
+     		position: relative; 	
+     	}
+
+    .paginas{
+        color: white;
+        text-decoration: none;
+        height: 100%;
+        padding: 20px 14px;
+    }
+
+    .paginas:hover{
+        box-shadow: 0px 0px 10px 3px white;
+        transition: 0.4s;
+    }
+
+    .dropbtn {
+        background-color: #921209;
+        color: white;
+        font-size: 20px;
+        border: none;
+        letter-spacing: 2px; 
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        word-spacing: 1px;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #921209;}
+
+    input.nome, input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#login1 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:none;
+  cursor: pointer;
+  width: 100%;
+  /*ALTERAÇÕES*/
+  float: right;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#login{
+  letter-spacing: 2px; 
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #921209;
+  color: white;
+  padding: 17px 15px;
+  margin: 8px 0;
+  border:none;
+  cursor: pointer;
+  width: 80%;
+  /*ALTERAÇÕES*/
+  float: right; 
+  margin-top: -1%;
+}
+
+#login:hover {
+  box-shadow: 0px 0px 10px 5px white;
+  transition: 0.4s;
+  border: 1px solid;
+} 
+/* Extra styles for the cancel button */
+.cancelbtn {
+  color:white;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  font-size: small;
+  float:  left;
+  margin-top: -2.8%;
+  border-radius: 10px;
+  border:none;
+}
+    
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 35%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 30px;
+  text-align: left;
+  font-size: large;
+  border-radius: 25px;
+}
+
+span.psw {
+  float: right;
+  font-size: small;
+  padding-top: 14px;
+  margin-top: -3.8%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 70%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
+  margin-left: 13%;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 25px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.navbar {
+  position: fixed; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
+  z-index: 1;
+}
+    </style>
+</head>
+
+ <body>
+
+<div class="navbar">
+  <div id="topo">
+
+
+      </div>
+
+  <div id="menu">
+<p><div class="h3"> 
+      <a href="index.html" id="a1" class="paginas">Inicio</a>
+      <a href="curso.html" id="a1" class="paginas">Curso</a>
+          <div class="dropdown">
+<button class="dropbtn"><a href="disciplinas.html" id="a1" class="paginas"><b>Disciplinas</b></a></button>
+<div class="dropdown-content">
+  <a target="">Interfaces</a>
+  <a target="">Gweb</a>
+  <a target="">Banco de Dados</a>
+  <a target="">Artes Digital</a>
+  <a target="">Fundamentos da Informática</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn"><a href="professores.html" id="a1" class="paginas"><b>Professores</b></a></button>
+<div class="dropdown-content">
+  <a name="menu">
+  <a href="#portugues" >Português</a>
+  <a href="#matematica">Matemática</a>
+  <a href="#bd">Banco de Dados</a>
+  <a href="#programacao">Programação </a> 
+  <a href="#Hardware">Hardware</a></a>
+</div></div>
+      <a href="sobre.html" id="a1" class="paginas" style="letter-spacing: 2px;">Sobre a ETEC</a>     
+  <span><button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Login </button></span>
+</div>
+  </div>
+  	</div>
+  <div id="conteudo">
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+    <img src="Imagens/asis.jpg" alt="MachadoAssis" class="rounded-circle" width="320" height="320" style="border: solid;">
+    
+    <br><br>
+    
+    <div id="nome">
+        <b>	Machado de Assis</b>
+    </div>
+    
+    <div id="titulo">
+        <a name="portugues"><h2><b id="portugues"> Professor de Língua Portuguesa </b></h2></a>
+    <div>
+    
+        <div id="subtitulo">
+        <h3><b>Formação</b></h3>
+    
+    </div>
+    
+    <div id="texto01">  Joaquim Maria Machado de Assis, nascido de uma família pobre,
+                        nunca conseguiu ter uma educação necessária na infância, sendo
+                        assim mal conseguia frequentar as escolas publicas de sua
+                        cidade. Mas isso não o impediu de correr atrás de seus estudos
+                        na adolescência, Machado de Assis tinha muito apoio de seus
+                        professores que o-ajudavam frequentemente doando livros de
+                        apoio. Após acabar o ensino fundamental 2, Machado decidiu
+                        que não queria uma vida escassa de conhecimento e estudou
+                        muito para passar em um colégio na cidade vizinha, porém não
+                        foi tão fácil assim, porque além de estudar na escola, ele tinha
+                        que trabalhar para ajudar seus pais, foi essa a época mais difícil,
+                        pois sofreu a primeira decepção, não foi aceito no colégio tão
+                        sonhado, e decaiu em tudo após essa baixa. Mas foi </div>
+    
+                        <div class="texto02"> 
+                         no ensino médio que conheceu sua mentora Barbara Lauren, essa o trouxe
+                        para o caminho literário, e deu assistência aos seus estudos, desde aí ele se mostrou diferente, conseguiu uma bolsa de 100% em Língua Portuguesa e literatura na faculdade Mackenzie, após
+                        fazer o vestibular para treino, ele passou e foi ai que sua carreira começou...
+                        </br> </br>
+                        Hoje é formado em Literatura e Língua Portuguesa na Faculdade Mackenzie.
+                        </br> </br> E mestrado pela em Língua Portuguesa pela Unicamp  </br> </br> 
+                        Cursando atualmente História na PUC-SP
+                    </div>
+    
+        <div id="subtitulo">
+    
+            <h3><b>Início da Carreira em Português/Literatura</b></h3>
+    
+        </div>				
+    
+        </br>
+        <div class="texto02"> 
+            Após acabar a faculdade e mestrado, Machado de Assis deu aulas
+            particulares em literatura, conquistando muitos alunos com seu talento na
+            linguagem, porém nada estava fluindo em sua vida no Brasil; nessa época
+            ele viajou para Londres e lá sua carreira explodiu, ele conseguiu dar o
+            maior passo em sua carreira lançou um livro, que foi considerado por
+            muitos críticos um dos mais importantes da literatura. Mas um dos
+            maiores feitos pessoais foi conquistar uma vaga como professor na
+            universidade de Londres e foi ai que se apaixonou por dar aula. Após
+            conseguir um bom dinheiro na Europa, Machado voltou para o Brasil e
+            começou sua carreira como professor de Literatura da USP.
+         </div>
+    
+        <div id="subtitulo" style="margin-left: -5%;">
+    
+            <h3><b>Experiencias Profissionais </b></h3>
+    
+        </div>	 
+    
+        <div class="texto02">
+    
+            <ul> 
+    
+                <li> Colégio poliedro </li>
+                <li> Universidade de Londres </li>
+                <li> USP </li>
+                <li> Mackenzie </li>
+                <li> Escola estadual Walter Weiszflog </li>
+                <li> Escola estadual Otto Weiszflog </li>
+                <li> Colégio Objetivo </li>
+                <li> Etec Paulo do Carmo Monteiro </li>
+    
+            </ul>
+    
+        </div>	
+    
+        <div id="subtitulo" style="margin-left: -5%;">
+    
+            <h3><b>Porque a ETEC de Franco? </b></h3>
+    
+        </div>
+    </br>
+        <div class="texto02">
+            Em toda minha carreira nunca tive muito dinheiro, e convivi
+            com muitas pessoas na mesma condição, sem talento nem
+            incentivo, mas graças a minha mentora do ensino médio,
+            consegui tomar um rumo em minha profissão e entender que
+            nada pode ser impossível, sendo pobre ou rico, seu futuro
+            sempre vai depender unicamente de você, a vida pode ser
+            injusta as vezes, não nós trás ninguém para ajudar e é por isso
+            passou todo conhecimento e aprendizado ao alunos. E o melhor
+            na Etec é que os alunos querem estar aqui, eles querem
+            aprender, eles estão aqui por eles, diferente da escola particular
+            aqui não tem como comprar notas, e diferente das escolas
+            totalmente do estado, aqui eu consigo dar aula.
+        </div>
+    
+    </br> </br> </br> </br> </br> </br> </br> 
+    
+    <br><br>
+
+    <img src="Imagens/Alan.jpeg" alt="Alan Mathison Turing" class="rounded-circle" width="320" height="320" style="border: solid; margin-left: -65%;">
+    
+    <div id="nome" style="margin-left:-65%;">
+        <b>	Alan Mathison Turing </b>
+    </div> 
+    
+    <div id="titulo" style="margin-left:10%;">
+        <a name="matematica"><h2><b> Professor de Matematica</b></h2></a>
+    </div>
+    
+        <div id="texto01"> 
+            Professor de matemática lecionando na Etec de Franco da Rocha desde que foi
+            fundada, Alan Turing, como costuma ser conhecido, ajudou milhares de
+            estudantes a passar nos vestibulares mais concorridos do estado de São Paulo.
+            Recebeu dos alunos uma satisfação de 97%, sendo considerado então um dos
+            melhores professores que a escola teve a honra de ter. Antes, dava aulas
+            gratuitas de programação online para adolescentes que não tinham tanto
+            conhecimento na área e com isso mostrou que um simples código pode fazer
+            coisas incríveis, inclusive mudar o mundo das pessoas.Quando ainda era uma criança, já resolvia problemas matemáticos complexos e demonstrava ser dono de uma mente lógica incrível. Alan sempre gostou de ler livros sobre matemática e física, até mesmo passou sua adolescência testando todos os tipos de experimentos possíveis. Muitas pessoas o incentivaram acontinuar nesse caminho, mas foi quando conheceu Christopher Morcom,
+        </div>
+    
+        <div class="texto02"> 
+            com quem fez amizade nos primeiros minutos de conversa,que o seu
+            desenvolvimento teve uma melhoria imprescindível. Hoje, os dois são casados
+            e Christopher o apoia muito em sua carreira como matemático.</div>
+    
+        <div id="subtitulo" style="margin-left: -4%;">
+    
+            <h3><b>Porque a ETEC de Franco? </b></h3>
+    
+        </div>
+    
+    </br>
+    
+        <div class="texto02">
+            
+            “Porque vi nela uma oportunidade de mudar positivamente a vida de alguém e
+            a sensação de ter contribuído para o futuro do nosso país é a melhor possível.
+            Hoje, com quase 16 anos na instituição, posso dizer que me sinto grato e
+            completo pela oportunidade que me foi dada há muitos anos. Espero continuar
+            fazendo um bom trabalho para que assim meus alunos cresçam e sejam
+            pessoas capazes de mudar o Brasil.”
+    
+        </div>
+    
+        <div id="subtitulo" style="margin-left: 5%;">
+    
+            <h3><b>Experiência </b></h3>
+    
+        </div>
+    </br>
+    
+        <div class="texto02"> 
+                <b> Professor de Matemática </b> </br>
+                ETEC Dr. Emílio Hernandez Aguilar, Franco da Rocha, SP
+                2006 – Presente
+    
+            </br> </br>
+    
+                <ul> 
+    
+                    <li> Mais de 95% de satisfação na pesquisa de satisfação; </li>
+                    <li> Eleito representante de turma desde 2010 até os dias de hoje;</li>
+                    <li> Ganhou o prêmio “Melhor professor” em 2019, eleito com 97% dos
+                    votos; </li>
+    
+                </ul>
+    
+            </br>  
+    
+            <b> Principal Conquista:</b> Ajudou mais de 99% de alunos a passarem nos mais
+            diversos vestibulares do estado de São Paulo e os 1% de alunos com
+            dificuldades em matemática a serem aprovados. </br> </br>
+    
+            <b> Professor de Matemática (1.º e 2.º colegial) </b> </br>
+            Colégio Vital Brazil, São Paulo, SP </br>
+            2000 – 2005
+    
+        </br> </br>
+    
+            <ul>
+                
+                <li> Desenvolveu uma forma de ensino na escola que fez com que os alunos
+                focassem mais em seus estudos, isso fez com que a taxa de reprovação
+                descaísse significativamente; </li>
+                <li> Eleito melhor professor em 2004; </li>
+                <li> Foi candidato a ser diretor por conta da sua dedicação e organização;</li>
+                <li> Coordenou mais de 20 reuniões entre pais e professores.</li>
+    
+            </ul>
+    
+            </br>  
+    
+            <b> Principal Conquista:</b>  Formou mais de 300 alunos, incluindo aqueles que
+            estavam quase reprovando. Ajudou mais de 150 a passarem em boas
+            faculdades.
+    
+        </div>
+    
+        <div id="subtitulo" style="margin-left: 5%;">
+    
+            <h3><b>Formação </b></h3>
+    
+        </div>
+    
+    </br> 
+    
+        <div class="texto02 ">
+            
+            <b>Programa de Pós-Graduação em Matemática da UNIFESP </b> </br>
+            Universidade Federal de São Paulo </br> </br>
+            <b> Curso de Matemática — Licenciatura </b> </br>
+            Universidade Federal de São Paulo </br>
+            Formado em 1997
+    
+        </br> </br> 
+    
+            <b> Habilidades:</b>
+    
+            <ul>
+                
+                <li> Conhecimento amplo da grade curricular de matemática;</li>
+                <li> Planejamento de aulas;</li>
+                <li> Aplicação e correção de exames; </li>
+    
+            </ul>
+    
+            <b> Habilidades Interpessoais:</b>
+    
+            <ul>
+                
+                <li> Liderança:</li>
+                <li> Comunicação;</li>
+                <li> Disciplina; </li>
+    
+            </ul>
+    
+        </div>
+    
+    </br> </br> </br> </br> </br> 
+    
+    <img src="Imagens/timo.png" alt="Timothy John Berners-Lee" class="rounded-circle" width="320" height="320" style="border: solid; margin-left: -65%;">
+    
+    <br><br>
+    
+    <div id="nome" style="margin-left:-65%;">
+        <b>	Timothy John Berners-Lee</b>
+    </div> 
+    
+    <div id="titulo" style="margin-left:10%;">
+        <a name="interfaces"><h2><b> Professor de Interfaces</b></h2></a>
+    </div>
+    
+        <div id="subtitulo" style="margin-left: -13%;">
+            <h3><b>Biografia </b></h3>
+        </div>
+    
+        <div id="texto01"> Timothy John Berners-Lee nasceu em Guarulhos em 8 de junho de 1955.
+        É um físico Paulista, Cientista da computação e professor da Etec(Escola técnica
+        estadual),Com disciplina em Interfaces Gweb.
+        Tim também frequentou o exterior na Europa em The Queen’s College, em Oxford, entre
+        1973 e 1976, onde obteve seu diploma em física. Enquanto estudava no exterior também
+        conseguiu seus diplomas em cientista da computação e professor.
+        Contudo voltou ao brasil para seguir seus sonhos e virar professor de uma ótima escola
+        técnica.
+        Formado em Física, Ciência da computação e professor técnico Tim é conhecido como o
+        melhor professor de São Paulo.</div>
+    
+        <div id="subtitulo" style="margin-left: -13%;">
+            <h3><b>Início da carreira de professor em Interfaces </b></h3>
+        </div>
+    
+    </br>
+    
+        <div class="texto02">
+            Mesmo com todos seus diplomas e conhecimentos, Tim tinha seus sonhos e suas metas,
+            Em um dos seus anos no The Queen’s College na Europa ele conheceu seu mentor Edward
+            Snowden em que o fez acreditar e agarrar seus desejos mesmo quando Lee queria desistir
+            de tudo, Snowden o ensinou, ajudou e também sempre o incentivou !
+            Depois então de tudo isso Timothy resolveu voltar para sua terra natal onde trabalhou nas
+            Etecs de São Paulo e Guarulhos sendo professor de Interfaces e tendo varias avaliações
+            excelentes dos professores e seus alunos. Mas isso ainda não era o que ele queria, seu 
+            sonho era trabalhar na Etec Emílio Hernandez Aguilar de Franco da Rocha, uma das
+            escolas com maior e melhor avaliação que toda São Paulo tinha.
+            Então é isso o que ele fez, entrou na Etec de Franco se tornou um dos melhores
+            professores e conquistando seus aprendizes/Alunos com sua carisma e passando todo seu
+            conhecimento a eles e fazendo adorarem interface mais do que ele próprio que amava a
+            disciplina
+        </div>
+    
+    </br>
+    
+        <div id="subtitulo" style="margin-left: -3%;">
+            <h3><b> Experiências profissionais </b></h3>
+        </div>
+    
+        <div class="texto02"> 
+    
+            <ul>
+                
+                <li> Etec de São Paulo</li>
+                <li> Etec de Guarulhos</li>
+                <li> Etec de Franco da Rocha</li>
+                <li> Instituto de Tecnologia de Massachusetts </li>
+                <li>  Universidade de Southampton</li>
+                <li> Royal Society</li>
+    
+            </ul>
+    
+         </div>
+    
+    </br>
+    
+        <div id="subtitulo" style="margin-left: -4%;">
+            <h3><b> Por que a Etec Franco da Rocha? </b></h3>
+        </div>
+    </br>
+    
+        <div class="texto02 ">
+            “Em todos os meus estudos, boa renda de dinheiro e convivência com vários profissionais
+            e alunos, mesmo estudando em vários colégios famosos e trabalhando em locais
+            considerados bons... Eu tinha meu sonho de ir a esta Etec, pois escutava muito bem dela
+            como uma das escolas técnicas mais famosas de São Paulo, e este sonho se tornou maior e
+            mais forte com a ajuda de meu tutor Edward Snowden. Agradeço muito por ele ter me
+            apoiado e dedicado seu tempo e paciência me ajudando e me incentivando a não desistir e
+            a correr atrás daquilo que eu sonhava!
+            Agora que estou aqui irei me inspirar em meu mentor, compartilhando meus
+            conhecimentos, ajudando no que for preciso e apoiando meus alunos em seus sonhos e
+            carreiras."
+        </div>
+    
+    </br>
+    
+        <div id="subtitulo" style="margin-left: 13%;">
+            <h3><b> Prêmios</b></h3>
+        </div>
+    </br>	
+    
+        <div class="texto02">
+    
+            <ul>
+        
+            <li> Prêmio de Tecnologia do Milênio(2004) </li>
+            <li> Prêmio Charles Stark Draper(2007) </li>
+            <li> Prêmio Japão(2002) </li>
+            <li> Prêmio Turing(2016) </li>
+    
+            </ul>
+    
+        </div>
+    
+        </br> </br> </br> </br> </br> </br> </br> 
+    
+    <img src="Imagens/JeffBezos.jpg" alt="Jeff Bezos" class="rounded-circle" width="320" height="320" style="border: solid; margin-left: -65%;">
+    
+    <br><br>
+    
+    <div id="nome" style="margin-left:-65%;">
+        <b>	Jeff Bezos </b>
+    </div> 
+    
+    <div id="titulo" style="margin-left:10%;">
+        <a name="bd"><h2><b> Professor de Banco de Dados </b></h2></a>
+    </div>
+    
+        <div id="subtitulo" style="margin-left: -13%;">
+            <h3><b> Biografia </b></h3>
+        </div>
+    
+        <div id="texto01"> 
+        Jeffrey Preston, conhecido internacionalmente como Jeff Bezos nasceu em Albuquerque, no Novo México e cresceu em Houston, Texas. Graduou-se na Universidade de Princeton em 1986 com a graduação em engenharia elétrica e informática. No início de sua carreira, trabalhou na área de banco de dados e começou a se aprofundar cada vez mais pelo mundo. Além de fundar um site ensinado como funcionava essa área, fundou a Blue Origin, uma empresa voltada às tecnologias em 2013, também adquiriu o The Washington Post, um dos principais veículos de informação dos Estados Unidos.
+    </div>
+    
+    
+        <div id="subtitulo" style="margin-left: -5%">
+            <h3><b> Inicio em Banco de Dados </b></h3>
+        </div>
+    
+    </br>
+    
+        <div class="texto02"> 
+        Jeffrey Preston depois de terminar sua faculdade de engenharia elétrica e informática, começou a se interessar muito mais por banco de dados.
+        Após a faculdade ele começou a se aprofundar no assunto, chegou a fazer viagens para entrar em contato com outros professores e ampliar seus conhecimentos. Anos veio para o Brasil e começou a dar aula e ensinar para seus alunos tudo o que tinha aprendido com milhares de pessoas de todo mundo em um só lugar.
+    </div>
+    
+        <div id="subtitulo" style="margin-left: -5%;">
+    
+            <h3><b>Porque a ETEC de Franco? </b></h3>
+    
+        </div>
+    
+    </br>
+    
+        <div class="texto02">
+            
+            “Em todos esses anos que faço pesquisa e estudo sempre tive o sonho de vir para o brasil, e ouvia muito falar da etec por ser uma escola técnica, então resolvi pegar a oportunidade que tive para ter o prazer de ensinar os alunos daqui”
+    
+        </div>
+    
+        <div id="subtitulo" style="margin-left: -5%;">
+    
+            <h3><b>Experiências Profissionais: </b></h3>
+    
+        </div>
+    </br>
+
+	<div class="texto02"> 
+			<b> Professor de Banco de Dados </b> </br>
+			ETEC Dr. Emílio Hernandez Aguilar, Franco da Rocha, SP
+			
+
+		</br> </br>
+
+		<ul>
+			<li> Universidade Estadual de Campinas (UNICAMP) </li>
+			<li> Etec Franco da Rocha </li>
+			<li> Universidade de Oxford (Inglaterra)</li>
+			<li> University College London (Inglaterra)</li>
+			<li> Monash University  (Austrália)</li>
+		</ul>
+	</div>
+
+	</br> </br> </br> </br> </br> </br> </br>
+
+	<img src="Imagens/AdaLovalace.jpg" alt="Ada Lovalace" class="rounded-circle" width="320" height="320" style="border: solid; margin-left: -65%;">
+
+<br><br>
+
+<div id="nome" style="margin-left:-65%;">
+	<b>	Ada Lovalace </b>
+</div> 
+
+<div id="titulo" style="margin-left:10%;">
+	<a name="programacao"><h2><b> Professora de Programação </b></h2></a>
+</div>
+
+	<div id="subtitulo" style="margin-left: -13%;">
+		<h3><b> Biografia </b></h3>
+	</div>
+
+	<div id="texto01"> 
+	Augusta Ada Byron King, mais conhecida como Ada Lovelace, nascida em Salvador, Bahia, criada somente pela mãe ,Anne,  matemática, mas conhecida por ter como pai o famoso escritor Byron. Porém, o mesmo nunca fez questão de conhecer a filha, casou-se com Anne por estar endividado na época e ela era de família rica, assim que Ada nasceu se separou de Anne e nunca a conheceu. 
+	Apesar de ter vivido com a mãe, nunca foram próximas, Anne trabalhava muito e quem ficava com Ada eram seus avós maternos. Contudo uma coisa puxou dos pais, a paixão pela poesia, como o pai, e pela matemática, como a mãe.  
+	E o interesse por programação veio logo cedo, quando foi a uma palestra de Charles Babbage, aos 12 anos em um passeio escolar, no qual ele dissertava sobre algoritmos. Desde então se aprofundou mais no assunto, e chegou a escrever um livro sobre. Começou a trabalhar com o próprio Babbage aos 16 anos, depois de traduzir um artigo seu e adicionar algumas notas que lhe chamaram a atenção.  
+	Assim que completou 18 anos, entrou em uma faculdade e cursou Ciência da Computação. 
+</div>
+
+	<div id="subtitulo" style="margin-left: -8%;">
+		<h3><b>Início da carreira como professora </b></h3>
+	</div>
+
+</br>
+
+	<div class="texto02">
+		Aos 28 anos, se mudou para São Paulo e resolveu criar um projeto chamado “Programação para todos" , no qual ensinava, gratuitamente, em escolas públicas, programação e algoritmos para dar à todos a oportunidade de entrarem no mundo que lhe encantava. 
+</br>
+	</div>
+	<div id="subtitulo" style="margin-left: -3%;">
+		<h3><b> Escolas que Ada Lecionou: </b></h3>
+	</div>
+
+	<div class="texto02"> 
+
+		<ul>
+			<li>    E.E Ítalo Betarello  </li>
+			<li> 	E.E Ministro Oscar Dias Correia  </li>
+			<li> 	E.E Professora Isabel Vieira de Serpa e Paiva </li>
+			<li> 	E.E Ana Siqueira da Silva  </li>
+			<li> 	CEU EMEF Pêra Marmelo </li>
+			<li> 	E.E Professor Sérgio da Silva Nobreza </li>
+		</ul>
+	</div>
+
+	<div class="texto02">
+	O Centro Paula Souza descobriu o projeto e a convidou para fazer parte do grupo de professores na etec, ela muito animada, aceitou e começou a lecionar 1 mês depois, quando passou por todos os testes necessários. 
+	 </div>
+
+</br>
+
+	<div id="subtitulo" style="margin-left: -5%;">
+		<h3><b> Por que a Etec Franco da Rocha? </b></h3>
+	</div>
+</br>
+
+	<div class="texto02 ">
+		“Quando entrei naquela escola e vi a felicidade dos alunos por estarem ali, o interesse pela matéria, percebi que era ali que queria estar. Quando criei meu projeto, imaginei uma sala cheia de alunos, com vontade de estar lá, e foi exatamente isso que encontrei na Etec Doutor Emílio Hernández Aguilar.” 
+	</div>
+
+</div>
+
+</br> </br> </br> </br> </br> </br> 
+
+<img src="Imagens/GabrielTorres.jpg" alt="Gabriel Torres" class="rounded-circle" width="320" height="320" style="border: solid; margin-left: -65%;">
+
+<br><br>
+
+<div id="nome" style="margin-left:-65%;">
+	<b>	Gabriel Torres </b>
+</div> 
+
+<div id="titulo" style="margin-left:10%;">
+	<a name="hardware"><h2><b id="Hardware"> Professor de Hardware </b></h2></a>
+</div>
+
+	<div id="subtitulo" style="margin-left: -13%;">
+		<h3><b> Biografia </b></h3>
+	</div>
+
+	<div id="texto01"> Gabriel Torres é carioca nascido em 7 de julho de 1974. Aos seus oito anos de idade ele se interessou por eletrônica. No seu aniversário de oito anos ganhou seu primeiro computador, pouco mais de um ano ganhou outro computador de seus pais um Apple II PLUS foi então que ele se interessou pela informática. Com catorze anos Torres começou a trabalhar por conta própria para consertar microcomputadores. Na mesma época ingressou no ensino médio integrado ao técnico em eletrônica do Instituto de Tecnologia ORT. Após terminar o ensino médio integrado ao técnico foi convidado a trabalhar no Instituto de Tecnologia ORT, onde permaneceu de 1993 a 2000. Em 1996, criou o site Clube do Hardware e publicou o seu primeiro livro, Hardware Curso Completo. Foi colunista do jornal carioca O Dia por mais de 10 anos, de outubro de 1996 até março de 2007.</div>
+
+	<div id="subtitulo" style="margin-left: 10%;">
+		<h3><b> Obras </b></h3>
+	</div>
+
+</br>
+
+	<div class="texto02">
+		Gabriel Torres escreveu 27 livros falando e explicando sobre Informática como:
+	</div>
+
+	<div class="texto02">
+		<ul>
+			<li>  Hardware Curso Completo</li>
+			<li> 	Hardware Curso Básico & Rápido</li>
+			<li> 	Montagem de Micros Curso Básico & Rápido</li>
+			<li> Fax/Modem Truques Espertos</li>
+			<li> 	Kit Multimídia Truques Espertos</li>
+		</ul>
+	</div>
+</br>
+	
+	<div class="texto02">
+		Atualmente Gabriel Torres é um escritor, jornalista, professor e empresário brasileiro, especializado em tecnologia da informação. É criador e editor executivo do site Clube do Hardware. E desde 2017 é instrutor de cursos online na plataforma Udemy.
+	</div>
+
+</br>
+
+	<div id="subtitulo" style="margin-left: -5%;">
+		<h3><b> Por que a Etec Franco da Rocha? </b></h3>
+	</div>
+</br>
+
+	<div class="texto02 ">
+		" Hoje eu trabalho na Etec, ensinando sobre hardware para os alunos porque quero mostrar para eles que podem ir além do que eles imagina com a informática"
+	</div>
+	</div>
+
+
+</br> </br> </br> </br> </br> </br> 
+
+<img src="Imagens/linus.jpg" alt="Linus Torvalds" class="rounded-circle" width="320" height="320" style="border: solid; margin-left: 3%;">
+
+</br></br>
+
+<div id="nome" style="margin-left: 3%;">
+	<b>	Linus Benedict Torvalds  </b>
+</div> 
+
+<div id="titulo" style="margin-left: 48%;">
+	<a name="software"><h2><b id="Hardware"> Professor de Software </b></h2></a>
+</div>
+
+	<div id="subtitulo" style="margin-left: 35%;">
+		<h3><b> Biografia </b></h3>
+	</div>
+
+	<div id="texto01" style="margin-left: 33%;"> Linus Benedict Torvalds é um engenheiro de software, nascido na Finlândia em 28 de dezembro de 1969 e foi naturalizado estado-unidense em 2010, criador, e por muito tempo o desenvolvedor mais importante do núcleo Linux, sendo utilizado em importantes sistemas Linux, Android e Chrome OS.</div>
+
+</br></br> 
+</br></br>
+</br></br> 
+
+	<div id="subtitulo" style="margin-left: 37%;">
+		<h3><b> Inicio da Carreira como Professor </b></h3>
+	</div>
+
+</br>
+
+	<div class="texto02" style="margin-left: 7%;">
+		Nascido em uma família de classe média, Linus Benedict Torvalds sempre sonhou em se mudar para o Brasil, com 10 anos realizou seu sonho, e gostou tanto da cultura que morou aqui por 5 anos, estudou na ETEC onde terminou o ensino médio e se formou na Finlândia. 
+		Quando fez 40 anos decidiu ensinar software para alunos do ensino médio, com a preocupação dos jovens de comunidades, Linus criou um grupo voluntario para ajudar jovens com poucos recursos para estudos focados na informática, em especial o software. 
+		Sua antiga escola foi destruída e restaurada apenas 20 anos depois, Linus segue na carreira de professor até hoje com 51 anos, e pretende dar aula por muito mais tempo, não por obrigação e sim por amor.
+	</div>
+
+</br>
+</br>
+
+	<div id="subtitulo" style="margin-left: 40%;">
+
+		<h3><b>Experiência Profissional: </b></h3>
+
+	</div>
+
+</br>
+
+	<div class="texto02" style="margin-left: 7%;"> 
+			Linus é um professor com muita experiência não só na área de software, como na informática em sim.
+			Linus em 1991 com apenas 22 anos quando ele ainda estudava na Universidade de Helsínquia na Finlândia ele criou o núcleo da Linux, um dos maiores e mais famosos sistemas operacionais do mundo.
+			O Linux nada mais é que o núcleo com várias extensões, que permite que qualquer usuário “comum” possa criar uma extensão ou um SO como por exemplo o Linux mint, o Ubuntu e muitos outros.
+	</div>
+
+</br>
+</br>
+	
+	<div class="texto02" style="margin-left: 7%;">
+		Ele também trabalhou em outros lugares como:
+	</div>
+
+	<div class="texto02" style="margin-left: 7%;">
+		<ul>
+			<li> Universidade de Helsínquia </li>
+			<li> Pontifícia Universidade Católica do Rio de Janeiro </li>
+			<li> Universidade Federal de Minhas Gerais </li>
+			<li> Universidade Federal do Ceará </li>
+			<li> Universidade Federal da Bahia </li>
+			<li> Universidade de São Paulo </li>
+		</ul>
+	</div>
+
+</br>	
+</br>
+
+	<div id="subtitulo" style="margin-left: 35%;">
+		<h3><b> Por que a Etec Franco da Rocha? </b></h3>
+	</div>
+
+</br>
+
+	<div class="texto02" style="margin-left: 7%;">
+		<h3><b>Segundo o próprio Linus:</b></h3>
+	</div>
+
+</br>
+
+	<div class="texto02" style="margin-left: 7%;">
+		“ A escola é a porta para o mundo real, eu vivi na ETEC coisa da qual eu sempre me lembrarei, ótimas lembranças, historias e amizades da qual eu levei para minha vida inteira e sempre levarei.
+		Tenho ótimas lembranças com os ótimos professores daquela escola, e realmente espero que meus alunos vivam o mesmo que eu... e espero vê-los lá na frente.... Como meus colegas ou quem sabe como famosos programadores na minha TV.”
+	</div>
+
+</br>
+
+	<div id="subtitulo" style="margin-left: 7%;">
+		<h3><b> Premios: </b></h3>
+	</div>
+
+	<div class="texto02" style="margin-left: 7%;">
+		<ul>
+			<li> Internet Hall of Fame (2012) </li>
+			<li> EFF Pioneer Award (1998) </li>
+		</ul>
+	</div>	
+
+</br>
+
+	<div class="texto02" style="margin-left: 7%;">
+		Nós da ETEC temos org ulho de dizer para todos, que temos um dos melhores Programadores/professores do mundo dando aula em nossa tão amada escola.
+	</div>
+
+
+</br> </br> 
+</br> </br>
+</br> </br>
+
+<img src="Imagens/MICHAEL.jpg" alt=" Michael Calce" class="rounded-circle" width="320" height="320" style="border: solid; margin-left: 3%;">
+
+</br></br>
+
+<div id="nome" style="margin-left: 3%;">
+    <b> Michael Calce  </b>
+</div> 
+
+<div id="titulo" style="margin-left: 48%;">
+    <a name="software"><h2><b id="Hardware"> Professor de Segurança </b></h2></a>
+</div>
+
+    <div id="subtitulo" style="margin-left: 35%;">
+        <h3><b> Biografia </b></h3>
+    </div>
+
+    <div id="texto01" style="margin-left: 33%;"> Michael Calce , nasceu em 1984, também conhecido como MAFIABOY . Nasceu na área da Ilha Oeste de Montreal , Quebec. Aos cinco anos , presenciol a separação de seus pais.
+Todo segundo fim de semana ele ficava no condominío de seu pai em Montreal. Ele se sentia isolado de seus amigos e incomodado com a separação de seus pais, então seu pai comprou para ele seu próprio computador aos seis anos de idade . Imediatamente o dominou : <br> “Lembro-me de sentar e ouvir bip , gorgolejar e digitar enquanto processava comandos . lembro-me de como a tela se iluminou na frente do meu rosto. Havia algo de inebriante na ideia de digitar tudo o computador fez , até a menos das função. O computador deu a mim , uma criança de seis anos , uma sensação de controle e comando. Nada mais em meu mundo funcionava dessa forma.”  
+</div>
+
+</br> 
+</br> 
+
+    <div class="texto02" style="margin-left: 40%;">
+        <h3><b>Projeto Revolta</b></h3>
+    </div>
+
+</br> 
+
+    <div class="texto02" style="margin-left: 7%;">
+        Em fevereiro de 2000 , um adolescente de apenas 15 anos , que ficou conhecido como “MafiaBoy” , corrompeu o mecanismo de pesquisa número um da época :  o Yahoo!. Em uma semana , ele teve a capacidade de derrubar a  Dell (uma empresa de computador dos E.U) , o eBay, ( uma empresa de comercio eletrônico) , a  CNN ( um canal de televisão) e a Amazon , usando um ataque de navegação de serviço (DDoS) dedicado , que sobrecarregar os servidores . Ele também lançou uma séries de ataques simultâneos fracassados contra nove dos treze Servidores de nove raiz (é um servidor de nomes para a zona raiz do sistema de nomes Domínio (DNS) , da internet)
+    </div>
+
+     <div class="texto02" style="margin-left: 40%;">
+        <h3><b>Anos Depois</b></h3>
+    </div>
+
+</br> 
+
+    <div class="texto02" style="margin-left: 7%;">
+        Durante o segundo semestre de 2005, ele escreveu uma coluna sobre temas de segurança de computadores para  o Le Journal de Montréal.   
+        No final de 2008, com o jornalista Craig Silverman,Calce anunciou que estava escrevendo um livro, Mafiaboy: How I Cracked the Internet e Why It's Still Broken.  
+        Em 26 de outubro de 2008, ele apareceu no programa de televisão Tout le monde en parle para discutir seu livro.  O livro recebeu críticas geralmente positivas.  
+        Calce apareceu em um programa de TV, Last Call with Carson Daly,falando sobre seus dias como hacker, como o presidente Clinton se envolveu, e como isso finalmente o levou para a cadeia, todos aos 15 anos. 
+        Em 2014, Calce apareceu no décimo segundo episódio do podcast Criminal.
+
+    </div>
+  </div>
+<!-- RODAPÉ -->
+
+<br/><br/><br/><br/><br/>
+  <div id="cadastre"> 
+    <h2> Cadastre-se para mais informações do vestibulinho da ETEC </h2>
+    <form>
+        <input type="text" id="email" name="email" placeholder="Seu@email.com">
+        <input  id="botao" type="submit" name="btn_cadastrar" value="cadastrar" height="100%">
+    </form>
+  </div>
+
+    <div id="rodape">
+
+  <img src="imagens/logo.png" height="290"> 
+  <div id="inicio"> Inicio </div>
+  <br/>
+  <a id="a" class="a" href="curso.html"> Cursos </a>
+  <br/>
+  <a id="a" class="a" href="disciplinas.html"> Disciplinas</a>
+  <br/>
+  <a id="a" class="a" href="Professores.html"> Professores</a>
+
+  <div id="barrinha"> <img src="imagens/barrinha.png" class="img1" height="150"> </div>
+
+  <div id="endereco"> Rod. Pref. Luiz Salomão Chamma, 1635 <br/> Pouso Alegre, Franco da Rocha - SP <br/> CP: 07859-040 </div>
+
+  <div id="barrinha02" > <img src="imagens/barrinha.png" class="img1" height="150" style="margin-right: 50%"> </div>  
+
+  <div id="insta">
+  <a href="https://www.instagram.com/etecfranco/">
+  <img src="imagens/iconeinsta.png" class="img1" height="80">
+  </a> 
+  </div>
+
+  <div id="fb">
+  <a href="https://www.facebook.com/etecfran">
+  <img src="imagens/iconefb.png" class="img1" height="45">
+  </a> 
+</div>
+
+  <div id="wpp">
+  <a href="https://web.whatsapp.com/">
+  <img src="imagens/iconewpp.png" class="img1" height="55">
+  </a> 
+  </div>
+
+  <div id="tt">
+  <a href="https://twitter.com/">
+  <img src="imagens/iconett.png" class="img1" height="75">
+  </a> 
+  </div>
+
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!----------------------LOGIN NÃO MEXER------------------------------>
+
+ <div id="id01" class="modal">
+  
+  <form class="modal-content animate"  method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="imagens/avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="psw   "><b>Nome de Usúario</b></label>
+      <input type="text" placeholder="Digite seu nome" name="psw" class="nome" required>
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Digite sua senha" name="psw" required>
+        
+      <button id="login1" type="submit"><b>Login</b></button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Me manter conectado
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><b>Cancelar</b></button>
+      <span class="psw"><a href="#">Não possui cadastro? Clique Aqui</a></span>
+    </div>
+  </form>
+</div>
+    
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
